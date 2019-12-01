@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+
+{% block title %}
+    Posts
+{% endblock %}
+
+
+
+{% block content %}
+    {% for post in posts %}
+        <div style="margin-top: 20px"></div>
+       <div class="card">
+        <div class="card-header">
+            {{ post.date }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title | upper }} </h5>
+            <a href="{% url 'post_detail_url' id=post.id %}" class="btn btn-primary">Read</a>
+
+       </div>
+</div>
+
+    {% endfor %}
+
+{% endblock %}
+
