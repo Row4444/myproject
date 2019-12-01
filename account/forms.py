@@ -4,12 +4,17 @@ from django.contrib.auth.forms import UserCreationForm
 from account.models import User
 
 
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField(max_length=254, help_text='Add a valid email address.')
 
     class Meta:
         model = User
         fields = ('email', 'username', 'date_of_birth', 'password1', 'password2',)
+        widgets = {'date_of_birth' : DateInput()}
 
 
 class AuthenticationForm(forms.ModelForm):
