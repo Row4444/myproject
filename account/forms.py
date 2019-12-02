@@ -14,7 +14,7 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('email', 'username', 'date_of_birth', 'password1', 'password2',)
-        widgets = {'date_of_birth' : DateInput()}
+        widgets = {'date_of_birth': DateInput()}
 
 
 class AuthenticationForm(forms.ModelForm):

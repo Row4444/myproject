@@ -25,8 +25,9 @@ SECRET_KEY = 'f#(vc_v0g)5sx-4f^*+tu-dna+czq77edqvuu7#&$!rh2cn9wy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
+DATETIME_INPUT_FORMATS = '%d/%m/%Y'
 
 # Application definition
 
@@ -154,10 +155,11 @@ EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_PASSWORD = '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'
 
 #celery
-CELERY_BROKER_URL = 'redis://h:pd1ea8d16910a8b89c9d3afffce2337b6a0c0a8a841148c30bf417daefe17a123@ec2-63-34-65-235.eu-west-1.compute.amazonaws.com:20979'
+
+CELERY_BROKER_URL = 'redis://h:p81e26a995b8cf30d9155b5f7fa1137e0f458c436e046c0c6a4f4491b8a56ffda@ec2-54-171-139-254.eu-west-1.compute.amazonaws.com:19129'
 
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'

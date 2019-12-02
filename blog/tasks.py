@@ -7,6 +7,5 @@ def send_email_comment(post, email, comment):
     send_mail('New comment for ' + post,
               comment,
               'myproject4089@gmail.com',
-              ['{}'.format(email)],
-              fail_silently=False)
+              [email],)
     return None

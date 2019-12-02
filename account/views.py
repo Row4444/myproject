@@ -85,8 +85,6 @@ class Login(View):
             return render(request, 'account/login.html', context)
 
 
-
-
 def activate(request, idb64, token):
     try:
         id = force_text(urlsafe_base64_decode(idb64))
@@ -102,4 +100,3 @@ def activate(request, idb64, token):
 def logout_view(request):
     logout(request)
     return redirect('Login')
-
