@@ -9,6 +9,7 @@ Celery is working with Redis.
 Redis-server is running on Herocu.
 
 Moderation of posts and accounts in the admin-panel.
+
 .toml was filled in manually.
 
 Thanks!
