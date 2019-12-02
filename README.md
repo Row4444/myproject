@@ -1,19 +1,23 @@
 # myproject
-django2-blog \n
+django2-blog 
 
-Simple blog on Djanga2. \n
-There are 2 apps at this project : blog and account. \n
+Simple blog on Djanga2. 
+There are 2 apps at this project : blog and account. 
 
-Emeil sendler is https://sendgrid.com/. \n
-Celery is working with Redis.\n
-Redis-server is running on Herocu.\n
+Emeil sendler is https://sendgrid.com/. 
+Celery is working with Redis.
+Redis-server is running on Herocu.
 
-Moderation of posts and accounts in the admin-panel.\n
-.toml was filled in manually.\n
-\n
-Thanks!\n
-\n
-admin: admin@admin.com \n
+Moderation of posts and accounts in the admin-panel.
+.toml was filled in manually.
+
+Thanks!
+
+admin: admin@admin.com 
+
+
 pass: admin
-\n Try to use! 
+
+
+Try to use! 
 
