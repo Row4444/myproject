@@ -13,8 +13,11 @@ Moderation of posts and accounts in the admin-panel.
 
 Thanks!
 
-admin: admin@admin.com 
+Site is clear now, try to post something.
 
+Admin-panel:
+
+admin: admin@admin.com 
 
 pass: admin
 
